@@ -1,0 +1,16 @@
+PODS:
+  - MachORegister (0.1)
+
+DEPENDENCIES:
+  - MachORegister (from `./`)
+
+EXTERNAL SOURCES:
+  MachORegister:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  MachORegister: b86f2fd8008a0238764837d473ce8922198a0106
+
+PODFILE CHECKSUM: a3b42c4c7d548d3cdd2f18e8b8099f800a0b24c6
+
+COCOAPODS: 1.11.3
