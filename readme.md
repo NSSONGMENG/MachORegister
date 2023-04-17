@@ -9,14 +9,13 @@
     
     
 key-value场景：
-如需全局访问的变量：如AppInnerVersion、AppBusinessVersion、全局开关等，注册后可根据key获取对应的value值
+如需全局访问的变量：如AppBusinessVersion、全局开关等，注册后可根据key获取对应的value值
  ```
  /// 注册
- MachORegisterK_V(AppInnerVersion, 6688)
  MachORegisterK_V(AppBusinessVersion, 1.0.0.1)
 
  /// 获取
- NSString *innerVersion = MachORegisterGetVWithKey(@"AppInnerVersion") // 宏定义方式
+ NSString *innerVersion = MachORegisterGetVWithKey(@"AppBusinessVersion") // 宏定义方式
  NSString *businessVersion = [[MachORegister shareRegister] shareStringWithKey:@"AppBusinessVersion"]; // 方法调用方式
 ```
     
