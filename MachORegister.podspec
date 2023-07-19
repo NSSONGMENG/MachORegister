@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MachORegister'
-  s.version          = '0.1'
+  s.version          = '0.1.1'
   s.summary          = 'MDMachORegister'
 
   s.description      = "iOS可执行文件注册共享k-v管理"
