@@ -99,7 +99,7 @@
 }
 
 
-#pragma mark - marh o
+#pragma mark - mach o
 
 #ifdef __LP64__
 typedef uint64_t MarchORegisterValue;
@@ -111,7 +111,7 @@ typedef struct section MarchORegisterSection;
 #define MachOGetSectByNameFromHeader getsectbynamefromheader
 #endif
 
-void __marhORegisterEmptyFouncation(void){
+void __machORegisterEmptyFouncation(void){
     // 空实现，为拿到当前image的Dl_info
 }
 
@@ -119,7 +119,7 @@ void __marhORegisterEmptyFouncation(void){
     _multiInfo = [NSMutableDictionary dictionaryWithCapacity:512];
     
     Dl_info info;
-    dladdr((const void*)&__marhORegisterEmptyFouncation, &info);
+    dladdr((const void*)&__machORegisterEmptyFouncation, &info);
 
     const MarchORegisterValue   mach_header = (MarchORegisterValue)info.dli_fbase;
     const MarchORegisterSection *section = MachOGetSectByNameFromHeader((void *)mach_header, "__DATA", "mach_o_kvset");
@@ -159,7 +159,7 @@ void __marhORegisterEmptyFouncation(void){
     _singlInfo = [NSMutableDictionary dictionaryWithCapacity:512];
     
     Dl_info info;
-    dladdr((const void*)&__marhORegisterEmptyFouncation, &info);
+    dladdr((const void*)&__machORegisterEmptyFouncation, &info);
 
     const MarchORegisterValue   mach_header = (MarchORegisterValue)info.dli_fbase;
     const MarchORegisterSection *section = MachOGetSectByNameFromHeader((void *)mach_header, "__DATA", "mach_o_kv");
